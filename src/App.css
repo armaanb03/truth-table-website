@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-wrapper {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.7);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 60px;
+  padding: 5px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.input-box {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  outline: none;
+  padding: 8px 10px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(#87CEEB  , rgb(255, 255, 255));
+  height: 100vh;
+  background-size: cover;
+  background-position: left;
+  transition: background-position 1s;
+}
+
+.wave {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+  fill: #00C2FF;
+  opacity: 0.4;
+}
+
+.table-display {
+  padding-bottom: 160px;
+}
+
+.title {
+  padding-top: 30px;
 }

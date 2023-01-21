@@ -1,0 +1,26 @@
+.truth-table {
+    text-align: center;
+    border-collapse: separate;
+    table-layout: auto;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.header {
+    height: 35px;
+}
+
+table, th, td {
+    border: none;
+    padding: 7px;
+}
+
+html {
+    min-height: 100%;
+}
+
+td, tr {
+    min-width: 70px;
+}
