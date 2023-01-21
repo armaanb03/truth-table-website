@@ -14,7 +14,13 @@ function App() {
 
     for (let i = 0; i < 2**variables.size; i++) {
         const assignments = Array.from(variables).reduce((acc, variable) => {
-            acc[variable] = (i >> variables.size - Array.from(variables).indexOf(variable) - 1) & 1 ? 'F' : 'T';
+            if (variable === 'T') {
+                acc[variable] = 'T';
+            } else if (variable === 'F') {
+                acc[variable] = 'F';
+            } else {
+                acc[variable] = (i >> variables.size - Array.from(variables).indexOf(variable) - 1) & 1 ? 'F' : 'T';
+            }
             return acc;
         }, {});
 
