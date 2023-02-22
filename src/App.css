@@ -1,11 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
 .search-wrapper {
   width: 100%;
   max-width: 700px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
   display: flex;
   align-items: center;
   border-radius: 60px;
   padding: 5px 20px;
+  box-shadow: 0 0 300px 400px rgba(255, 255, 255, 0.0075);
+  transition: all .2s ease-in-out;
+}
+
+
+.search-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.input-box::placeholder {
+  font-family: 'Michroma', sans-serif;
+  font-size: 15px;
 }
 
 .input-box {
@@ -22,37 +36,24 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(#87CEEB  , rgb(255, 255, 255));
-  height: 100vh;
-  background-size: cover;
-  background-position: left;
   transition: background-position 1s;
 }
 
-.wave {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  line-height: 0;
-}
-
-.wave svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  transform: rotateY(180deg);
-}
-
-.wave .shape-fill {
-  fill: #00C2FF;
-  opacity: 0.4;
-}
-
 .table-display {
+  color: white;
   padding-bottom: 160px;
 }
 
 .title {
   padding-top: 30px;
+  color: white;
+}
+
+body {
+  /* background-image: linear-gradient(#a287eb  , rgb(137, 16, 236));*/
+  background-color: #212121;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
