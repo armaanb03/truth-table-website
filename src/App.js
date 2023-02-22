@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import DynamicTable from './components/Table';
+import Guide from './components/Guide';
 
 function App() {
   function truthTable(input) {
@@ -178,10 +179,10 @@ function App() {
         if (message !== "" && checkOperatorsAndSymbols(message) && checkWellFormed(message)) {
             return <DynamicTable data={truthTable(message)} message={message}/>;
         } else {
-            return <div>Enter a well formed formula and your truth table will appear here.</div>;
+            return <Guide/>;
         }
     } catch (error) {
-        return <div>Enter a well formed formula and your truth table will appear here.</div>
+        return <Guide/>;
     }
   }
 

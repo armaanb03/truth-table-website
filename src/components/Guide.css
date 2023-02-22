@@ -1,0 +1,78 @@
+.table-wrapper {
+    cursor: pointer;
+    text-align: center;
+    border-collapse: separate;
+    table-layout: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #25262b;
+    box-shadow: 0 0 300px 400px rgba(255, 255, 255, 0.0075);
+    -moz-border-radius: 10px;
+    position: relative;
+}
+
+.table-wrapper:hover::before,
+.table-wrapper:hover > .table-border {
+    opacity: 1;
+}
+
+.table-wrapper::before,
+.table-wrapper > .table-border {
+    background: radial-gradient(
+        1500px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.04),
+        transparent 40%
+    );
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    transition: opacity 400ms;
+    z-index: 2;
+}
+
+.table-wrapper::before {
+    background: radial-gradient(
+        1500px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.04),
+        transparent 40%
+    );
+    z-index: 3;
+}
+
+.table-wrapper > .table-border {
+    background: radial-gradient(
+        1500px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.3),
+        transparent 40%
+    );
+    z-index: 1;
+}
+
+.table-wrapper > .table-content {
+    background-color: var(--table-color);
+    border-radius: inherit;
+    height: calc(100% - 2px);
+    margin: 1px;
+    width: calc(100% - 2px);
+    position: relative;
+    z-index: 2;
+}
+
+.text-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.operators, .guide {
+    padding-bottom: 15px;
+    padding-top: 8px;
+}
+
+.guide-title {
+    padding-top: 15px;
+}
