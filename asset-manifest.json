@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/truth-table-website/static/css/main.c309a87d.css",
-    "main.js": "/truth-table-website/static/js/main.415e6542.js",
+    "main.css": "/truth-table-website/static/css/main.200ed862.css",
+    "main.js": "/truth-table-website/static/js/main.df893005.js",
     "static/js/787.c8843c66.chunk.js": "/truth-table-website/static/js/787.c8843c66.chunk.js",
     "index.html": "/truth-table-website/index.html",
-    "main.c309a87d.css.map": "/truth-table-website/static/css/main.c309a87d.css.map",
-    "main.415e6542.js.map": "/truth-table-website/static/js/main.415e6542.js.map",
+    "main.200ed862.css.map": "/truth-table-website/static/css/main.200ed862.css.map",
+    "main.df893005.js.map": "/truth-table-website/static/js/main.df893005.js.map",
     "787.c8843c66.chunk.js.map": "/truth-table-website/static/js/787.c8843c66.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c309a87d.css",
-    "static/js/main.415e6542.js"
+    "static/css/main.200ed862.css",
+    "static/js/main.df893005.js"
   ]
 }
