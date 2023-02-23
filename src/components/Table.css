@@ -7,16 +7,25 @@
 }
 
 table, th, td {
-    border: none;
-    padding: 7px;
+    border-collapse: collapse;
+    padding: 12px;
+    min-width: 70px;
 }
 
 html {
     min-height: 100%;
 }
 
-td, tr {
-    min-width: 70px;
+tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+tr:last-child {
+    border-bottom: 0;
+}
+
+tr:first-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
 }
 
 .table-wrapper {

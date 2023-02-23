@@ -66,6 +66,8 @@
 .text-content {
     padding: 20px;
     text-align: left;
+    max-width: 700px;
+    word-wrap: break-word;
 }
 
 .operators, .guide {

@@ -47,10 +47,10 @@
 .title {
   padding-top: 30px;
   color: white;
+  max-width: 700px;
 }
 
 body {
-  /* background-image: linear-gradient(#a287eb  , rgb(137, 16, 236));*/
   background-color: #212121;
   background-size: cover;
   background-position: center center;

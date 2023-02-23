@@ -28,7 +28,7 @@ const DynamicTable = ({ data, message }) => {
               <th>{message.replaceAll('(', '').replaceAll(')', '')}</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="table-values">
             {data.map((item, index) => (
               <tr key={index}>
                 {headers.map((header, index) => (
